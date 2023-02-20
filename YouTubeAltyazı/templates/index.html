@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube Altyazı indir</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube Altyazı İndirici </h1>
+        <form method="POST" action="/url">
+            <input type="text" id="url" name="url" placeholder="Video url adresini girin">
+            <button type="submit" id="download">İndir</button>
+        </form>
+        {% if status %}
+            <script>
+                alert("Video altyazıları başarılı bir şekilde kayıt edildi.")
+            </script>
+        {% endif %}
+
+    </div>
+</body>
+</html>
